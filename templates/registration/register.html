@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block head_title %}home_title{% endblock %}
+{% block content %}
+
+با وارد کردن اطلاعات خود در این مکان می توانید عضو سایت شوید
+<form  method="post"enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
+{% endblock %}

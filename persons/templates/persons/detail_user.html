@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block head_title %}home_title{% endblock %}
+{% block content %}
+
+    <div id="po" class="thumbnail">
+<div style="text-align:center">
+{{u.username}}
+<hr/>
+<h3>نام</h3>
+{{u.first_name}}
+<hr/>
+
+
+<h3>نام خانوادگی</h3>
+{{u.last_name}}
+<hr/>
+
+
+<h3>کد ملی</h3>
+{{u.member.national_code}}
+<hr/>
+
+
+<h3>شماره تلفن</h3>
+{{u.member.phone_number}}
+<hr/>
+</div>
+</div>
+
+{% endblock %}

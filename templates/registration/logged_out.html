@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block head_title %}home_title{% endblock %}
+{% block content %}
+<a href="{% url 'login' %}">click here to login</a>
+<br/>
+<a href="{% url 'accounts:register' %}">click here to register</a>
+{% endblock %}
